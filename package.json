@@ -1,0 +1,41 @@
+{
+  "name": "express-server-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set DEBUG=app & nodemon app.js",
+    "lint": "eslint app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "chalk": "^2.4.2",
+    "debug": "^4.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.17.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "3000",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
