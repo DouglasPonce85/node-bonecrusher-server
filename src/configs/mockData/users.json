@@ -1,0 +1,18 @@
+[
+  {
+    "ID": 1,
+    "ORGANIZATION_ID": 1,
+    "LOGIN": "jellis@us.imshealth.com",
+    "FIRSTNAME": "Joshua",
+    "LASTNAME": "Ellis",
+    "TYPE": 3
+  },
+  {
+    "ID": 21,
+    "ORGANIZATION_ID": 1,
+    "LOGIN": "doug@bairesdev.com",
+    "FIRSTNAME": "Douglas",
+    "LASTNAME": "Ponce",
+    "TYPE": 3
+  }
+]

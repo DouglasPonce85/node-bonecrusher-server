@@ -1,0 +1,62 @@
+[
+  {
+    "ID": 1,
+    "NAME": "Hue",
+    "ICON": 1,
+    "INFOURL": "http://iqvia.com/"
+  },
+  {
+    "ID": 21,
+    "NAME": "SAS",
+    "ICON": 1,
+    "INFOURL": "http://img.url/img"
+  },
+  {
+    "ID": 22,
+    "NAME": "Cloudera",
+    "ICON": 1,
+    "INFOURL": "http://datasheet_xyz.com"
+  },
+  {
+    "ID": 23,
+    "NAME": "Big Data Transfer",
+    "ICON": 0,
+    "INFOURL": "http://transfer.com/"
+  },
+  {
+    "ID": 24,
+    "NAME": "Jupyter Notebook",
+    "ICON": 1,
+    "INFOURL": "http://jupyter.com/"
+  },
+  {
+    "ID": 25,
+    "NAME": "Data",
+    "ICON": 0,
+    "INFOURL": "http://data.com/"
+  },
+  {
+    "ID": 26,
+    "NAME": "DAP",
+    "ICON": 0,
+    "INFOURL": "http://dap.com/info"
+  },
+  {
+    "ID": 27,
+    "NAME": "Demo",
+    "ICON": 0,
+    "INFOURL": "http://demo.com"
+  },
+  {
+    "ID": 28,
+    "NAME": "BD",
+    "ICON": 1,
+    "INFOURL": "http://bd.com"
+  },
+  {
+    "ID": 41,
+    "NAME": "Nano 2.5",
+    "ICON": 1,
+    "INFOURL": "http://nano.com"
+  }
+]

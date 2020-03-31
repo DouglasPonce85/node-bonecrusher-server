@@ -1,0 +1,14 @@
+[
+  {
+    "ORGANIZATION_ID": 1,
+    "PRODUCT_ID": 1,
+    "ENABLED": 1,
+    "PRODUCTURL": "https://iqvia.com/"
+  },
+  {
+    "ORGANIZATION_ID": 2,
+    "PRODUCT_ID": 41,
+    "ENABLED": 1,
+    "PRODUCTURL": "http://nano.com"
+  }
+]

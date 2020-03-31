@@ -1,0 +1,16 @@
+[
+  {
+    "ID": 1,
+    "NAME": "IQVIA",
+    "CODE": "IQVIA",
+    "CLUSTERID": "0",
+    "CRMSID": "0"
+  },
+  {
+    "ID": 2,
+    "NAME": "Merck",
+    "CODE": "MERCK",
+    "CLUSTERID": "us0201",
+    "CRMSID": "700040"
+  }
+]

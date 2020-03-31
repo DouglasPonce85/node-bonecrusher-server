@@ -1,0 +1,47 @@
+image: node:10
+
+stages:
+  - build
+  - test
+  - deploy
+
+before_script:
+   - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+   - eval $(ssh-agent -s)
+   - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+   - mkdir -p ~/.ssh
+   - chmod 700 ~/.ssh
+   - ssh-keyscan ec2-18-209-60-115.compute-1.amazonaws.com >> ~/.ssh/known_hosts
+   - chmod 644 ~/.ssh/known_hosts
+
+   
+
+cache:
+  key: "$CI_COMMIT_REF_SLUG"
+  paths:
+  - node_modules/
+  - lib/
+
+build:
+  tags:
+    - seattle
+    - linux
+    - caching
+  stage: build
+  script:
+    - npm install
+
+publish_dev:
+  tags:
+    - seattle
+    - linux
+    - caching
+  stage: deploy
+  only:
+    - develop
+  script:
+    - npm install
+    - scp -v -C -r ./* clckwrk@ec2-18-209-60-115.compute-1.amazonaws.com:/var/www/dsc
+    - ssh -t clckwrk@ec2-18-209-60-115.compute-1.amazonaws.com "sudo /sbin/service dsc stop"
+    - ssh -t clckwrk@ec2-18-209-60-115.compute-1.amazonaws.com "sudo /sbin/service dsc start"
+
